@@ -1,0 +1,37 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0 auto;
+    background-image: url(thor.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 150%;
+}
+header{
+    background-color: rgb(28, 38, 60);
+    padding: 30px;
+}
+header img{
+    float: left;
+    margin: 10px 780px 10px 10px;
+    position: relative;
+    bottom: 30px;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    margin: 0px 20px 0px 20px;
+    font-size: 20px;
+}
+a:hover{
+    color: blueviolet;
+}
+h1{
+    font-size: 80px;
+    margin-bottom: 0px;
+}
+h1,p{
+    position: relative;
+    top: 130px;
+    margin-left: 20px;
+    color: white;
+}
