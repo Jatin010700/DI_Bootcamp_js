@@ -1,0 +1,59 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 40px;
+    background-color: rgb(35, 35, 35);
+    color: white;
+    
+}
+.pattern-triangles-md{
+    background-color: orangered;
+}
+/*---------------------------------*/
+
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+img{
+    border: 5px solid orangered;
+    border-radius: 100px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+header,h1,p{
+    align-items: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+}
+h2{
+    color: orangered;
+    text-align: center;
+}
+
+/*-------------------------*/
+
+a{
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+}
+section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 15px;
+}
+.contact{
+    text-align: center;
+    padding: 10px;
+}
+.contact *:hover{
+    color: orangered;
+    transition: 0.5s;
+}
+.contact p{
+    text-align: right;
+}
