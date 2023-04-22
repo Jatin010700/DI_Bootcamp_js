@@ -1,0 +1,133 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0 auto;
+    background-color: rgb(232, 232, 232); 
+}
+/*----------------------------------------*/
+nav{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+.left-col,.right-col{
+    display:flex;
+    gap: 20px;
+   align-items: center; 
+}
+a{
+    text-decoration: none;
+    color: gray;
+    transition: 0.5s;
+    
+}
+a:hover{
+    color:#0275d8;
+    font-weight: bold;
+}
+svg{
+    color: #0275d8;
+}
+nav input{
+    border:2px solid;
+    border-radius: 4px;
+    border-color:#0275d8 ;
+    color:#0275d8 ;
+    padding: 5px 10px 5px 10px;
+    background-color: white;
+}
+nav input:hover{
+    background-color: #0275d8;
+    transition: 0.5s;
+    color: white;
+}
+
+/*-----------------------------------*/
+.header{
+    text-align: center;
+    margin-top: 50px;
+}
+h3,h6{
+    color: gray;
+}
+select{
+    border:2px solid;
+    border-radius: 4px;
+    border-color:#0275d8 ;
+    color:#0275d8 ;
+    padding: 5px 10px 5px 10px;
+    margin-bottom: 100px;
+}
+/*----------------------------------------*/
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    text-align: center;
+}
+
+ span h6{
+    background-color: #0275d8;
+    color: white;
+    border-radius: 4px 4px 0px 0px;
+    text-align: center;
+    padding: 5px;
+}
+
+/*-----------------useless------------------*/
+
+.column-2 h6,.column-3 h6{
+    background-color: rgb(232, 232, 232);
+    color: rgb(232, 232, 232);;
+}
+
+.column-3>p:last-child{
+    color: white;
+}
+/*------------------------------------------*/
+
+ .column-1 .column-2 ,span ,p:nth-child(-5){
+    font-size: 25px;
+}
+.column-1 ,.column-2,.column-3{
+    background-color: white;
+    
+}
+.container input{
+    border:none;
+    border-radius: 4px;
+    background-color: rgb(117, 178, 127);
+    color: white;
+    padding: 5px 10px 5px 10px;
+    margin-bottom: 10px;
+}
+/*--------------------------------------*/
+
+.feature{
+    background-color: rgb(25, 84, 117);
+    color: white;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: flex-start;
+}
+ h5{
+    margin-top: 15px;
+}
+hr{
+    border: 1px solid;
+    width: 80%;
+}
+.feature-3{
+    background-color: rgb(25, 84, 117);
+    color: white;
+    padding-bottom: 302px;
+    border-radius: 4px;
+    
+}
+.column-1 .feature{
+    padding-bottom: 48px;
+}
