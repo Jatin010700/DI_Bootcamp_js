@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let sentence = ["my", "favorite", "color", "is", "blue"];
+        let joinedSentence = sentence.join(" ");
+        console.log(joinedSentence);
+
+    //-------------------------------
+
+        let str1 = "mix";
+        let str2 = "pod";
+
+        let str3 = str2.slice(0,2) + str2.slice(2)
+        let str4 = str1.slice(0,2) + str1.slice(2)
+        
+        console.log(str3)
+        console.log(str4)
+        
+        console.log(str3 + " " + str4)
+
+        //--------------------------------------
+
+        let num1 = prompt("Enter the first number:");
+        console.log(typeof num1);
+
+       
+        num1 = Number(num1);
+
+        let num2 = prompt("Enter the second number:");
+        console.log(typeof num2);
+
+        
+        num2 = Number(num2);
+
+        let sum = num1 + num2;
+        let sub = num1 - num2;
+        let multiply = num1 * num2;
+        let divide = num1 / num2;
+
+        alert("Sum: " +  sum + "    " + "\sub: " + sub + "    " + "\multiply: " + multiply + "    " + "\divide: " + divide);
+    </script>
+</body>
+</html>

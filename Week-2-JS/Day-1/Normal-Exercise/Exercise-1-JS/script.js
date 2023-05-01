@@ -20,3 +20,4 @@ pets.push("horse")
 console.log(pets)
 pets.splice(3,1)
 console.log(pets)
+
