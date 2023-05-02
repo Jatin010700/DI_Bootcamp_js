@@ -103,10 +103,12 @@ for (let key in family) {
 
 //---------------part 6-----------------
 
-// const details = {
-//     my: 'name',
-//     is: 'Rudolf',
-//     the: 'raindeer'
-//   }
+const details = {
+    my: 'name',
+    is: 'Rudolf',
+    the: 'raindeer'
+  }
 
-//don't know
+  for (let x in details) {
+    console.log(x , details[x])
+  }
