@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>Users:</div>
+    <ul>
+      <li>John</li>
+      <li>Pete</li>
+    </ul>
+
+    <p id = "myPara"></p>
+
+    <a id ="google" href="https://www.google.com">Google</a>
+    
+    
+    <script defer>
+      let div = document.body.children[0];
+      let ul = div.nextElementSibling;
+      let li = ul.lastElementChild;
+
+      console.log(div.innerHTML)
+      console.log(ul.innerHTML)
+      console.log(li.innerHTML)
+
+      //-------------
+
+      let para = document.getElementById("myPara");
+      console.log(para.innerHTML);
+
+      para.innerHTML="Example of changing of a content of paragraph";
+
+      let google = document.querySelector("#google");
+      google.innerHTML("Bing");
+    </script>
+</body>
+</html>
