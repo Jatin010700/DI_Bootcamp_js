@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    #sales-banner {
+        background-color: #f44336;
+        color: white;
+        font-size: 24px;
+        font-weight: bold;
+        padding: 20px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        text-align: center;
+        display: none;
+
+    }
+    </style>
+</head>
+<body>
+
+    <div id="sales-banner">The sales end in <span id="countdown-timer">10</span>sec!</div>
+
+
+    <script>
+        // setTimeout (function() {
+        //     document.getElementById("sales-banner").style.display = "block";
+        // }, 5000);
+        
+
+        //-------------------------
+
+        let seconds = 10;
+        let countTimer = setInterval(function() {
+            seconds --;
+            document.getElementById("countdown-timer").innerHTML = seconds
+			if (seconds === 0) {
+				clearInterval(countTimer);
+				document.getElementById("sales-banner").style.display = "none";
+			}
+		}, 1000);
+
+		setTimeout(function() {
+			document.getElementById("sales-banner").style.display = "block";
+		});
+        
+    </script>
+</body>
+</html>

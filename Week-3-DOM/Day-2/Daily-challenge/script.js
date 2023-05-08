@@ -10,11 +10,11 @@ let storySpan = document.querySelector('#story');
 form.addEventListener('submit', function(event) {
   event.preventDefault();
 
-  let nounValue = nounInput.value.trim();
-  let adjValue = adjInput.value.trim();
-  let personValue = personInput.value.trim();
-  let verbValue = verbInput.value.trim();
-  let placeValue = placeInput.value.trim();
+  let nounValue = nounInput.value;
+  let adjValue = adjInput.value;
+  let personValue = personInput.value;
+  let verbValue = verbInput.value;
+  let placeValue = placeInput.value;
 
   if (nounValue === '' || adjValue === '' || personValue === '' || verbValue === '' || placeValue === '') {
     console.error('All fields are required.');

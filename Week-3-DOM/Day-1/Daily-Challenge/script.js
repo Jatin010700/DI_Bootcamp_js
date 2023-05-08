@@ -4,7 +4,7 @@ const planets = ['Mercury', 'Venus', 'Earth', 'Mars',
         const colors = ['red', 'orange', 'yellow', 
         'green', 'aqua', 'indigo', 'violet', 'purple'];
 
-        const moons=[0,];
+        const moons=[0];
 
         for (let i = 0; i < planets.length; i++) {
 

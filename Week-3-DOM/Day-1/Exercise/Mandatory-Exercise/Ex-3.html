@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>part 3</title>
+</head>
+<body>
+    <div id="navBar">
+        <ul>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">My Friends</a></li>
+            <li><a href="#">Messenger</a></li>
+            <li><a href="#">My Pics</a></li>
+        </ul>
+    </div>
+
+    <script>
+
+        let newDiv = document.getElementById("navBar")
+        newDiv.setAttribute("id","socialNetworkNavigation")
+
+        let unorderedList = document.querySelector('ul');
+        let newLi = document.createElement("li");
+        let anchorEle = document.createElement('a');
+        let textNode = document.createTextNode('Logout');
+        anchorEle.appendChild(textNode);
+        anchorEle.href = '/logout';
+        newLi.appendChild(anchorEle);
+        unorderedList.appendChild(newLi);
+
+        let li1 = document.querySelector("a:first-child").textContent;
+        let li2 = document.querySelector("a:last-child").textContent;
+
+      console.log(li1.innerHTML)
+      console.log(li2.innerHTML)
+    </script>
+</body>
+</html>

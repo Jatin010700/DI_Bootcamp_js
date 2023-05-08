@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <select id="select1"> 
+        <option value="apple">Middle School</option>
+        <option value="pear">University</option>
+        <option value="banana">College</option>
+    </select>
+
+    <script>
+        function manipulate() {
+
+        const dropdown = document.getElementById("select1")
+        dropdown.options= "pear";
+        dropdown.selectedIndex = 1;
+        console.log(dropdown.value)
+
+        const newOption1 = document.createElement('option');
+        newOption1.value = 'Work';
+        newOption1.text = 'Work';
+        dropdown.add(newOption1);
+
+        const newOption2 = document.createElement('option');
+        newOption2.value = 'Primary School';
+        newOption2.text = 'Primary School';
+        dropdown.add(newOption2, 0);
+
+        dropdown.value = "college";
+        const button = document.createElement('button');
+        button.textContent = 'Show selected option';
+        button.addEventListener('click', () => {
+            alert(dropdown.value);
+        });
+        document.body.appendChild(button);
+        }
+
+    </script>
+</body>
+</html>
