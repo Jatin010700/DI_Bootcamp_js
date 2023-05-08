@@ -19,23 +19,39 @@
 
     <script>
 
-        let newDiv = document.getElementById("navBar")
-        newDiv.setAttribute("id","socialNetworkNavigation")
+        // let newDiv = document.getElementById("navBar")
+        // newDiv.setAttribute("id","socialNetworkNavigation")
 
-        let unorderedList = document.querySelector('ul');
-        let newLi = document.createElement("li");
-        let anchorEle = document.createElement('a');
-        let textNode = document.createTextNode('Logout');
-        anchorEle.appendChild(textNode);
-        anchorEle.href = '/logout';
-        newLi.appendChild(anchorEle);
-        unorderedList.appendChild(newLi);
+        // let unorderedList = document.querySelector('ul');
+        // let newLi = document.createElement("li");
+        // let anchorEle = document.createElement('a');
+        // let textNode = document.createTextNode('Logout');
+        // anchorEle.appendChild(textNode);
+        // anchorEle.href = '/logout';
+        // newLi.appendChild(anchorEle);
+        // unorderedList.appendChild(newLi);
 
-        let li1 = document.querySelector("a:first-child").textContent;
-        let li2 = document.querySelector("a:last-child").textContent;
+        // let li1 = ul.firstElementChild.firstChild.textContent;
+        // let li2 = ul.firstElementChild.firstChild.textContent;
 
-      console.log(li1.innerHTML)
-      console.log(li2.innerHTML)
+        // console.log(`First link: ${li1}`);
+        // console.log(`Last link: ${li2}`);
+
+        const navBar = document.getElementById('navBar');
+navBar.setAttribute('id', 'socialNetworkNavigation');
+
+const ul = document.querySelector('ul');
+const li = document.createElement('li');
+const text = document.createTextNode('Logout');
+
+li.appendChild(text);
+ul.appendChild(li);
+
+const firstLink = ul.firstElementChild.firstChild.textContent;
+const lastLink = ul.lastElementChild.firstChild.textContent;
+
+console.log(`First link: ${firstLink}`);
+console.log(`Last link: ${lastLink}`);
     </script>
 </body>
 </html>

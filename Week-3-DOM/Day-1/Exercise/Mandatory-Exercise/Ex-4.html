@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="listBooks"></div>
+
+    <script>
+const allBooks = [
+  {
+    title: 'The Great Gatsby',
+    author: 'F. Scott Fitzgerald',
+    image: 'https://images.pexels.com/photos/2697760/pexels-photo-2697760.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
+    alreadyRead: true
+  },
+  {
+    title: 'To Kill a Mockingbird',
+    author: 'Harper Lee',
+    image: 'https://images.pexels.com/photos/2639586/pexels-photo-2639586.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
+    alreadyRead: false
+  },
+  {
+    title: '1984',
+    author: 'George Orwell',
+    image: 'https://images.pexels.com/photos/204611/pexels-photo-204611.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
+    alreadyRead: true
+  },
+  {
+    title: 'Harry Potter and the Philosopher\'s Stone',
+    author: 'J.K. Rowling',
+    image: 'https://images.pexels.com/photos/2747443/pexels-photo-2747443.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
+    alreadyRead: true
+  },
+  {
+    title: 'The Hitchhiker\'s Guide to the Galaxy',
+    author: 'Douglas Adams',
+    image: 'https://images.pexels.com/photos/724680/pexels-photo-724680.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
+    alreadyRead: false
+  }
+];
+    // Get the div element to render the table inside
+const booksDiv = document.querySelector('.listBooks');
+
+// Create a table element
+const table = document.createElement('table');
+
+// Create table headers
+const th1 = document.createElement('th');
+const th2 = document.createElement('th');
+const th3 = document.createElement('th');
+
+// Set header text content
+th1.textContent = 'Book Title';
+th2.textContent = 'Author';
+th3.textContent = 'Image';
+
+// Append the headers to the table
+table.appendChild(th1);
+table.appendChild(th2);
+table.appendChild(th3);
+
+// Loop through all the books in the array
+for (let i = 0; i < allBooks.length; i++) {
+  // Create a new row for each book
+  const tr = document.createElement('tr');
+
+  // Create cells for each book's title, author, and image
+  const titleCell = document.createElement('td');
+  const authorCell = document.createElement('td');
+  const imageCell = document.createElement('td');
+
+  // Set the text content for the title and author cells
+  titleCell.textContent = allBooks[i].title;
+  authorCell.textContent = allBooks[i].author;
+
+  // Set the width of the image cell
+  imageCell.style.width = '50px';
+
+  // Create an image element and set its source attribute to the book's image url
+  const img = document.createElement('img');
+  img.src = allBooks[i].image;
+
+  // Append the image to the image cell
+  imageCell.appendChild(img);
+
+  // If the book is already read, set the color of the cells to red
+  if (allBooks[i].alreadyRead) {
+    titleCell.style.color = 'red';
+    authorCell.style.color = 'red';
+  }
+
+  // Append the cells to the row
+  tr.appendChild(titleCell);
+  tr.appendChild(authorCell);
+  tr.appendChild(imageCell);
+
+  // Append the row to the table
+  table.appendChild(tr);
+}
+
+// Append the table to the div element
+booksDiv.appendChild(table);
+    </script>
+</body>
+</html>
