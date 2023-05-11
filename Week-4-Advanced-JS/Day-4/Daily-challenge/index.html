@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily</title>
+</head>
+<body>
+<!--     
+    Create a class named Video. The class should be constructed with the following parameters:
+    title (a string)
+    uploader (a string, the person who uploaded it)
+    time (a number, the duration of the video - in seconds)
+    Create a method called watch() which displays a string as follows:
+    “uploader parameter watched all time parameter of title parameter!”
+    Instantiate a new Video instance and call the watch() method.
+    Instantiate a second Video instance with different values.
+    Bonus: Use an array to store data for five Video instances (ie. title, uploader, time)
+    Think of the best data structure to save this information within the array.
+    Bonus: Loop through the array to instantiate those instances.
+     -->
+
+    <script>
+
+        class video {
+            constructor(title,uploader,time){
+                this.title = title
+                this.uploader = uploader
+                this.time = time
+                
+            }
+            watch(){
+                console.log(`${this.uploader} watched all ${this.time} of ${this.title}!`)
+            }
+
+        }
+        let playVideo = new video ("Pacific Rim", "Jatin","10 seconds")
+        let newVideo  = new video("The Walking Dead", "Amelia", "2 hours")
+        playVideo.watch()
+        newVideo.watch()
+
+        // let arrVideo = [
+        // new video("Pacific Rim", "Jatin", "10 seconds"),
+        // new video("The Walking Dead", "Amelia", "2 hours"),
+        // new video("Transformer", "Sam", "30 minutes"),
+        // new video("Pirates of the Carribean", "Kevin", "1.5 hours"),
+        // new video("Titeuf", "Brad", "24 hours")
+        // ];
+
+        // arrVideo.forEach(video => {
+        //     video.watch()
+        // })
+        
+    </script>
+</body>
+</html>
