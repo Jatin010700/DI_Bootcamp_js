@@ -133,6 +133,9 @@ function reset(){
     [B7, B5, B3]
 
 ]
+
+//---------------NotCompleted----------------//
+
 const B1 = document.getElementsByID("B1").value;
 const B2 = document.getElementsByID("B2").value;
 const B3 = document.getElementsByID("B3").value;
