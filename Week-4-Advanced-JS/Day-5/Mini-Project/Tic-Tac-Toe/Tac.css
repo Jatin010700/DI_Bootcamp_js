@@ -1,0 +1,59 @@
+body{
+    margin: 40px 200px;
+    font-family: 'Poppins', sans-serif;
+}
+#header{
+    text-align: center;
+    
+}
+
+#main-box{
+    display: grid;
+    grid-template-columns: 91px 91px 91px;
+    grid-template-rows: 91px 91px 91px;
+    position: relative;
+    left: 36%;
+    
+    
+}
+#B1 ,#B2 ,#B3 ,#B4,
+#B5 ,#B6 ,#B7 ,#B8 ,#B9 {
+    border: none;
+    padding: 25.5px;
+    width: 40%;
+    background-color: white;
+    color: black;
+    text-align: center;
+    font-size: 50px;
+    cursor: pointer;
+}
+/* #B1:hover ,#B2:hover ,#B3:hover ,#B4:hover,
+#B5:hover ,#B6:hover ,#B7:hover ,#B8:hover,#B9:hover{
+    background-color: rgb(222, 222, 222);
+    transition: 0.4s;
+} */
+/*--------------BorderRight---------------------*/
+
+#B1,#B4, #B7,#B2,#B5,#B8{
+    border-right: 5px solid;
+}
+
+/*----------------BorderBottom------------------*/
+
+#B4,#B5,#B6,#B1,#B2,#B3{
+    border-bottom: 5px solid;
+    
+}
+
+/*---------------------------------------------*/
+
+#reset{
+    padding: 15px 25px 15px 25px;
+    border: none;
+    border-radius: 5px;
+    background-color: aqua;
+}
+#reset:hover{
+    background-color: coral;
+    transition: 0.5s;
+}

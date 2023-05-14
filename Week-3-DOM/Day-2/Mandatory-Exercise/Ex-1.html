@@ -8,6 +8,7 @@
 </head>
 <body>
 
+    <!----------------part1---------------->
     <article>
         <h1> Some Facts </h1>
         <h2> The Chocolate </h2>
@@ -20,7 +21,24 @@
         thanks to its unique, rich, and sweet taste.</p> 
         <p> But what effect does eating chocolate have on our health?</p> 
     </article>
+    <button id="myButton">Click Me</button> 
 
+<!-----------------part2------------------->
+
+    <form>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname"><br><br>
+        <input type="submit" value="Submit" id="submit">
+      </form> 
+      <ul class="usersAnswer"></ul>
+
+      <!------------------>
+
+      
+
+      <script src="Ex-2.js"></script>
     <script>
         const article = document.querySelector('article');
         const h1Element = article.querySelector('h1');
@@ -29,6 +47,39 @@
         const paragraphs = article.querySelectorAll('p');
         const lastParagraph = paragraphs[paragraphs.length - 1];
         lastParagraph.remove();
+
+        const clickH2 = document.querySelector("h2")
+            clickH2.addEventListener("click", function() {
+            clickH2.style.backgroundColor = "red"
+        });
+        const clickH3 = document.querySelector("h3")
+            clickH3.addEventListener("click", function() {
+            clickH3.style.display = "none"
+        });
+        const clickButton = document.querySelector("button")
+        clickButton.addEventListener('click', function() {
+        paragraphs.forEach(function(paragraph) {
+        paragraph.style.fontWeight = 'bold';
+      });
+    });
+    // h1Element.addEventListener('mouseover', function() {
+    //   const randomSize = Math.floor(Math.random() * 101);
+    //   h1Element.style.fontSize = `${randomSize}px`;
+    // });
+
+    // // Bonus: Fade out the 2nd paragraph on hover
+    // const secondParagraph = paragraphs[1];
+    // secondParagraph.addEventListener('mouseover', function() {
+    //   let opacity = 1;
+    //   const fadeOutInterval = setInterval(function() {
+    //     opacity -= 0.1;
+    //     secondParagraph.style.opacity = opacity;
+    //     if (opacity <= 0) {
+    //       clearInterval(fadeOutInterval);
+    //       secondParagraph.style.display = 'none';
+    //     }
+    //   }, 100);
+    // });
     </script>
 </body>
 </html>

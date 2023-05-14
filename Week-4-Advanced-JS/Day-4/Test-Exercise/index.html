@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+
+        // class phone {
+        //     brand()
+        //     model()
+        //     dimension()
+        //     weight()
+        //     amountOfRAM()
+        //     processor()
+        //     color()
+        //     storage()
+        //     powerOn(){
+        //         // switches the phone on
+        //     }
+        // }
+        // class character {
+        //     //hair
+        //     //color
+        //     walk(){
+
+        //     }
+        //     run(){
+
+        //     }
+        //     jump(){
+
+        //     }
+        //     crouch(){
+                
+        //     }
+        //     shoot(weapon){
+
+        //     }
+        // }
+
+        // const myPhone = new Phone();
+        // const yourPhone = new Phone();
+        // const anotherPhone = new Phone();
+    
+        //------------------------------------//
+
+    //     class Rectangle {
+    //     constructor(a,b) {
+    //         this.height = a;
+    //         this.width = b;
+    //     }
+    //     calculateArea() {
+    //         return this.height * this.width
+    //     }
+    // }
+    //     const myRectangle = new Rectangle(10,8)
+    //     console.log(myRectangle.height)
+    
+    //----------------------------------------------//
+
+//     class Rabbit {
+//     constructor(type) {
+//         this.type = type;
+//     }
+//     speak(line) {
+//         console.log(`The ${this.type} rabbit says '${line}'`);
+//     }
+// }
+//     let killerRabbit = new Rabbit("killer");
+//     let blackRabbit = new Rabbit("black");
+//     blackRabbit.speak("This is the end of world")
+
+//-------------------------------------------------------//
+
+// class car {
+//     constructor(brand,model){
+//         this.brand = brand
+//         this.model = model
+//         this.engineStarted = false
+//         this.maxSpeed = 250
+//     }
+//     startEngine(){
+//         this.engineStarted = true
+//     }
+//     stopEngine(){
+//         this.engineStarted = false
+//     }
+//     accelerate() {
+//         if (this.engineStarted) {
+//         console.log(`The ${this.brand} ${this.model} is accelerating...`)
+//     }
+//     else {
+//         console.log("Starts the engine first...")
+//     }
+// }
+// }
+// const newCar = new car("Honda","Civic")
+// newCar.accelerate()
+
+// newCar.startEngine()
+// newCar.accelerate()
+// newCar.stopEngine()
+
+// newCar.accelerate()
+
+//----------------------------------------//
+
+// class animal {
+//     constructor(name,color){
+//     this.name = name
+//     this.color = color
+//     }
+//     speak(){
+//         console.log("Animal speaks???")
+//     }
+// }
+// class dog extends animal{
+//     constructor(name,color){
+//         super(name,color)
+//       }  
+//     wagTail() {
+//         console.log("wagging its tail")
+//     }
+//     speak(){
+//         super.speak()
+//         console.log("Dog Barks!!!")
+//     }
+// }
+// let dogSpeak = new dog ("Blackie", "Brown")
+// dogSpeak.speak()
+
+
+// const myDog = new dog("brownie", "Blackie")
+// console.log(myDog.name)
+// myDog.wagTail()
+
+//------------------------------------------------//
+
+class Button { 
+    constructor (backgroundColor, textColor, text) {
+        this.backgroundColor = backgroundColor
+        this.textColor = textColor
+        this.text = text
+    }
+
+    click() { 
+
+    }
+
+    doubleClick() {
+
+    }
+}
+
+class RoundedButton extends Button {
+    constructor(backgroundColor, textColor, text, radius) {
+        super(backgroundColor, textColor, text)
+        this.radius = radius
+    }
+}
+
+const myButton = new Button("black", "white", "Submit Form", 4)
+
+    </script>
+</body>
+</html>

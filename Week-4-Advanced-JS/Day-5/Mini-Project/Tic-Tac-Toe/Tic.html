@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic tac toe</title>
+    <link rel="stylesheet" href="Tac.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div id = "header">
+    <h1>TIC TAC TOE</h1> 
+    
+    <p id="ins">Game starts by just TAPPING on  
+        box<br><br>First Player starts as  
+        <b>Player 1</b> And Second  
+        Player as <b>Player 2</b> 
+    </p>
+
+<div id = "main-box">
+    <input type="text" id = "B1" class = "grid" onclick = "box1();">
+    <input type="text" id = "B2" class = "grid" onclick = "box2();">
+    <input type="text" id = "B3" class = "grid" onclick = "box3();">
+    <input type="text" id = "B4" class = "grid" onclick = "box4();">
+    <input type="text" id = "B5" class = "grid" onclick = "box5();">
+    <input type="text" id = "B6" class = "grid" onclick = "box6();">
+    <input type="text" id = "B7" class = "grid" onclick = "box7();">
+    <input type="text" id = "B8" class = "grid" onclick = "box8();">
+    <input type="text" id = "B9" class = "grid" onclick = "box9();">
+</div>
+
+<div class="winning-message" id = "winningMessage">
+    <div id = "winningMessageText"></div>
+<br>
+        <button id="reset" onclick="reset()">RESET</button> 
+        <button id="reset" onclick="reset()">RESTART</button> 
+        <br><br> 
+        <p id="turn"></p>
+</div>
+</div>
+
+    <script src="Toe.js"></script>
+</body>
+</html>
