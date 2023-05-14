@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+    #target {
+        width: 200px;
+        height: 200px;
+        position: relative;
+        background: yellow;
+    }
+    #box {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        background-color: red;
+        cursor: grab;
+    }
+    </style>
+</head>
+<body>
+    <div id="target"></div>
+    <br>
+    <div id="box"></div>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var box = document.getElementById("box");
+      var target = document.getElementById("target");
+      var isDragging = false;
+      var offset = { x: 0, y: 0 };
+
+      box.addEventListener("mousedown", startDragging);
+      box.addEventListener("mousemove", drag);
+      box.addEventListener("mouseup", drop);
+      box.addEventListener("mouseleave", drop);
+
+      function startDragging(event) {
+        isDragging = true;
+        offset.x = event.offsetX;
+        offset.y = event.offsetY;
+      }
+
+      function drag(event) {
+        if (isDragging) {
+          box.style.left = event.pageX - offset.x + "px";
+          box.style.top = event.pageY - offset.y + "px";
+        }
+      }
+
+      function drop() {
+        isDragging = false;
+        if (isOverTarget()) {
+          box.style.left = "0";
+          box.style.top = "0";
+          target.appendChild(box);
+        }
+      }
+
+      function isOverTarget() {
+        var boxRect = box.getBoundingClientRect();
+        var targetRect = target.getBoundingClientRect();
+
+        return (
+          boxRect.left >= targetRect.left &&
+          boxRect.right <= targetRect.right &&
+          boxRect.top >= targetRect.top &&
+          boxRect.bottom <= targetRect.bottom
+        );
+      }
+    });
+    </script>
+</body>
+</html>

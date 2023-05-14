@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <style>
+        #container {
+          width: 400px;
+          height: 400px;
+          position: relative;
+          background: yellow;
+        }
+        #animate {
+          width: 50px;
+          height: 50px;
+          position: absolute;
+          background-color: red;
+        }
+        </style>
+    </head>
+    <body>
+        <p><button onclick="myMove()">Click Me</button></p>
+        <div id="container">
+          <div id="animate"></div>
+        </div>
+
+        <script>
+   let aniblock = document.getElementById("animate")
+
+// click event
+function myMove() {
+      let start = Date.now(); // start date
+
+      let timer = setInterval(function() {
+        let timePassed = Date.now() - start;
+        console.log(timePassed)
+        aniblock.style.left = timePassed / 5.7 + 'px';
+        if (timePassed > 2000) {
+          clearInterval(timer);
+        }
+      }, 20);
+    }
+        </script>
+    </body>
+    </html>
