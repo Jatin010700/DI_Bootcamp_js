@@ -19,10 +19,31 @@
     
     <p id="ins">Game starts by just TAPPING on  
         box<br><br>First Player starts as  
-        <b>Player 1</b> And Second  
-        Player as <b>Player 2</b> 
+        <b>Player X</b> And Second  
+        Player as <b>Player O</b> 
     </p>
+<div id="gameContainer">
+    <div id="cellContainer">
+        <div cellIndex="0" id = "B1" class="cell"></div>
+        <div cellIndex="1" id = "B2" class="cell"></div>
+        <div cellIndex="2" id = "B3" class="cell"></div>
+        <div cellIndex="3" id = "B4" class="cell"></div>
+        <div cellIndex="4" id = "B5" class="cell"></div>
+        <div cellIndex="5" id = "B6" class="cell"></div>
+        <div cellIndex="6" id = "B7" class="cell"></div>
+        <div cellIndex="7" id = "B8" class="cell"></div>
+        <div cellIndex="8" id = "B9" class="cell"></div>
+    </div>
+    <h2 id="statusText"></h2>
 
+    <!-- <button id="reset" onclick="reset()">RESET</button>  -->
+    <button id="restartBtn">RESTART</button>
+
+</div>
+
+
+
+<!-- 
 <div id = "main-box">
     <input type="text" id = "B1" class = "grid" onclick = "box1();">
     <input type="text" id = "B2" class = "grid" onclick = "box2();">
@@ -43,7 +64,7 @@
         <br><br> 
         <p id="turn"></p>
 </div>
-</div>
+</div> -->
 
     <script src="Toe.js"></script>
 </body>
