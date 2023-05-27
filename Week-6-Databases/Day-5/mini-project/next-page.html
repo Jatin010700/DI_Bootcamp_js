@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Task List</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+<style>
+    *{
+        font-family: 'Poppins', sans-serif;
+    }
+</style>
+
+</head>
+<body>
+  <h1>Task List</h1>
+  
+  <ul id="task-list"></ul>
+  
+  <script>
+    // Retrieve tasks from localStorage
+    const tasks = JSON.parse(localStorage.getItem('tasks')) || [];
+
+    // Function to calculate the number of days left for a task
+    function calculateDaysLeft(endDateTime) {
+      const now = new Date();
+      const end = new Date(endDateTime);
+      const timeDiff = end.getTime() - now.getTime();
+      const daysLeft = Math.ceil(timeDiff / (1000 * 3600 * 24));
+      return daysLeft;
+    }
+
+    // Generate task display
+    const taskList = document.getElementById('task-list');
+    tasks.forEach(function(task) {
+      const li = document.createElement('li');
+      const name = document.createElement('h2');
+      const startDate = document.createElement('p');
+      const daysLeft = document.createElement('p');
+
+      name.textContent = task.name;
+      startDate.textContent = `Starting date: ${task.startDateTime}`;
+      daysLeft.textContent = `Days left to complete: ${calculateDaysLeft(task.endDateTime)}`;
+
+      li.appendChild(name);
+      li.appendChild(description);
+      li.appendChild(startDate);
+      li.appendChild(daysLeft);
+
+      taskList.appendChild(li);
+    });
+  </script>
+</body>
+</html>

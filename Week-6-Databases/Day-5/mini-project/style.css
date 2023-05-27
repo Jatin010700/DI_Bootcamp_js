@@ -1,0 +1,63 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+#task-form{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   align-items: center;
+}
+ ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+  li{
+    background-color: aqua;
+    padding: 20px;
+    margin: 15px;
+    border-radius: 10px;
+  }
+ button{
+    background: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 15px;
+    margin-right: 10px;
+ }
+
+ #submit{
+    background: greenyellow;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 15px;
+    margin-left: 15px;
+ }
+ .uncompleted {
+   background-color: crimson;
+ }
+ 
+ .completed {
+   background-color: greenyellow;
+ }
+/*  
+ .overdue {
+   background-color: orange;
+ }
+  */
+
+  .redBall{
+   background-color: crimson;
+   width: 15%;
+   padding: 10px;
+   border-radius: 100px;
+   text-align: center;
+  }
+  .greenBall{
+   background-color: greenyellow;
+   width: 15%;
+   padding: 10px;
+   border-radius: 100px;
+   text-align: center;
+  }

@@ -28,10 +28,10 @@ VALUES
     ('Trevor', 'Green'),
     ('Melanie', 'Johnson');
 
--- SELECT * FROM items ORDER BY price DESC;
+SELECT * FROM items ORDER BY price DESC;
 
--- SELECT * FROM items WHERE price > 80 ORDER BY price ASC;
+SELECT * FROM items WHERE price > 80 ORDER BY price ASC;
 
--- SELECT * FROM customers ORDER BY first_name ASC;
+SELECT * FROM customers ORDER BY first_name ASC;
 
--- SELECT * FROM items INNER JOIN  customers ON items.id = customers.id ORDER BY last_name DESC;
+SELECT * FROM items INNER JOIN  customers ON items.id = customers.id ORDER BY last_name DESC;
