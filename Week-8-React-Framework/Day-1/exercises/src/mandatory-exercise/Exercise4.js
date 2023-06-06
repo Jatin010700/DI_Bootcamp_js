@@ -27,7 +27,7 @@ function Part4 () {
  
  const style_header = {
     color: "red",
-    backgroundColor: "DodgerBlue",
+    backgroundColor: "LightBlue",
     padding: "10px",
     fontFamily: "Arial"
   };
