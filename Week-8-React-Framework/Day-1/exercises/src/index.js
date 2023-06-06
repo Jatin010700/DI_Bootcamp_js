@@ -5,6 +5,8 @@ import App from './App';
 
 import Carousel from './Daily-challenge/carousel'; //------dailychallenge---------//
 
+import Exercise from './mandatory-exercise/mandatory'; //--------mandadoryExercise---------//
+
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -12,6 +14,7 @@ root.render(
   <React.StrictMode>
     <App />
    <Carousel/> 
+   <Exercise/>
   </React.StrictMode>
 );
 

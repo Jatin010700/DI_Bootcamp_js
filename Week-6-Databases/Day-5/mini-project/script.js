@@ -122,8 +122,10 @@ document.getElementById('task-form').addEventListener('submit', handleSubmit);
 
 //--------DELETE BUTTON---------
     deleteBtn.addEventListener('click', function() {
-    li.remove();
     confirm("Are you sure??")
+    // if (result !== confirm){
+      li.remove();
+    
   })});
 
  // Function to update task status and apply styles
