@@ -1,0 +1,9 @@
+React
+
+npx create-react-app (filename)
+
+cd (filename)
+
+npm start
+
+//-------------------------------//
