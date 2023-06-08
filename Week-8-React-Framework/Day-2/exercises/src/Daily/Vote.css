@@ -1,0 +1,41 @@
+h1 {
+    text-align: center;
+  }
+
+.languages {
+    height: 400px;
+    width: 400px;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .language {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    background-color: coral;
+    border: 2px solid #222;
+    margin: 2px;
+  }
+  
+  .voteCount {
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .language button {
+   
+    background-color: aqua;
+    border: none;
+    font-size: 30px;
+    border-radius: 50px;
+    padding: 10px;
+    outline: none;
+    cursor: pointer;
+    font-weight: bold;
+  }
