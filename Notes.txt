@@ -1,4 +1,4 @@
-google font:
+GOOGLE FONT:
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,12 +11,22 @@ google font:
 
 //-------------------------------//
 
-React:
+REACT:
 
 npx create-react-app (filename)
 
 cd (filename)
 
 npm start
+
+//-----REACT ROUTER----//
+npm install react-router
+
+//----ADD INTO INDEX.JS----//
+import { BrowserRouter } from "react-router-dom"; 
+
+ <BrowserRouter>
+      <App />
+</BrowserRouter>
 
 //-------------------------------//
