@@ -9,10 +9,7 @@ GOOGLE FONT:
     font-family: 'Poppins', sans-serif;
     
 
-//-------------------------------//
-
-REACT:
-
+//-------------REACT-------------//
 npx create-react-app (filename)
 
 cd (filename)
@@ -29,4 +26,22 @@ import { BrowserRouter } from "react-router-dom";
       <App />
 </BrowserRouter>
 
-//-------------------------------//
+//----REDUX----//
+npm install --save redux react-redux
+
+
+//-------------NODE.JS-----------//
+
+npm init   (install a packageJSON)
+
+npm install --save-dev nodemon
+
+npm start  (it will call the “start” key of the json file)
+
+npm install express
+
+npm install body-parser
+
+npm install knex
+
+npm install bcrypt
