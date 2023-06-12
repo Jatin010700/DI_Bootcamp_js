@@ -30,9 +30,10 @@ app.get('/index', (req, res) => {
 
 // Route for form submission
 app.post('/formData', (req, res) => {
+  const fullName = req.body.fullName;
   const email = req.body.email;
   const message = req.body.message;
-  res.send(`${email} sent you a message: "${message}"`);
+  res.send(`${fullName} sent you a message: "${message}". Sent reply on ( ${email} ) `);
 });
 
 // Start the server
