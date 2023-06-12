@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 ```
 
-### css:
+#### css:
 ```
 font-family: 'Poppins', sans-serif;
 ```
@@ -27,7 +27,7 @@ npm start
 npm install react-router
 ```
 
-### Add Into Index.js
+#### Add Into Index.js
 ```
 import { BrowserRouter } from "react-router-dom"; 
 
@@ -36,7 +36,7 @@ import { BrowserRouter } from "react-router-dom";
 </BrowserRouter>
 ```
 
-#### Redux:
+### Redux:
 ```
 npm install --save redux react-redux
 ```
