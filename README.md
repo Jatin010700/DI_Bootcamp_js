@@ -1,5 +1,5 @@
 # **NOTES:**
-## Google Fonts:
+## Google Fonts
 
 ```
  <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -8,11 +8,11 @@
 
 ```
 
-## css:
+### css:
     font-family: 'Poppins', sans-serif;
 
 ***
-## React:
+## REACT
 
 ```
 npx create-react-app (filename)
@@ -23,12 +23,12 @@ npm start
 
 ```
 
-#### REACT ROUTER:
+### React Router:
 ```
 npm install react-router
 ```
 
-#### ADD INTO INDEX.JS
+### Add Into Index.js
 ```
 import { BrowserRouter } from "react-router-dom"; 
 
@@ -37,7 +37,7 @@ import { BrowserRouter } from "react-router-dom";
 </BrowserRouter>
 ```
 
-#### REDUX:
+#### Redux:
 ```
 npm install --save redux react-redux
 ```
