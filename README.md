@@ -1,37 +1,52 @@
-GOOGLE FONT:
+# **NOTES:**
+## Google Fonts:
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+```
+ <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 
-    css:
+```
 
+## css:
     font-family: 'Poppins', sans-serif;
-    
 
-//-------------REACT-------------//
+***
+## React:
+
+```
 npx create-react-app (filename)
 
 cd (filename)
 
 npm start
 
-//-----REACT ROUTER----//
-npm install react-router
+```
 
-//----ADD INTO INDEX.JS----//
+#### REACT ROUTER:
+```
+npm install react-router
+```
+
+#### ADD INTO INDEX.JS
+```
 import { BrowserRouter } from "react-router-dom"; 
 
- <BrowserRouter>
+<BrowserRouter>
       <App />
 </BrowserRouter>
+```
 
-//----REDUX----//
+#### REDUX:
+```
 npm install --save redux react-redux
+```
+***
 
 
-//-------------NODE.JS-----------//
+## NODE.JS
 
+```
 npm init   (install a packageJSON)
 
 npm install --save-dev nodemon
@@ -45,3 +60,4 @@ npm install body-parser
 npm install knex
 
 npm install bcrypt
+```
