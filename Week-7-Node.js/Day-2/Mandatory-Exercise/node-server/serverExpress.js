@@ -1,0 +1,9 @@
+const express = require('express')
+const app = express()
+
+app.get('/', (req, res) => {
+    res.send(` <h1>This is an HTML tag</h1> `);
+});
+
+app.listen(3000); 
+console.log('Node.js web server at port 3000 is running..')
