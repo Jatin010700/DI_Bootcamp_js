@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+
+  <script>
+    function enableSubmitButton() {
+        const username = document.getElementById("username").value;
+        const password = document.getElementById("password").value;
+        const loginButton = document.getElementById("loginBTN");
+
+        if (username !== "" && password !== "") {
+            loginButton.disabled = false;
+        } else {
+            loginButton.disabled = true;
+        }
+    }
+</script>
+
+</head>
+<body>
+  <h1>Login</h1>
+  <form id="login-form">
+    <div>
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" onkeyup="enableSubmitButton()"> 
+    </div>
+    <br>
+    <div>
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" onkeyup="enableSubmitButton()">
+    </div>
+    <div>
+      <button type="submit" id="loginBTN" disabled>Login</button>
+    </div>
+  </form>
+  
+  <p id="loginResult"></p>
+
+  <script src="script.js"></script>
+</body>
+</html>
