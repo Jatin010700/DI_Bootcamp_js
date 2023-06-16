@@ -59,4 +59,6 @@ npm install body-parser
 npm install knex
 
 npm install bcrypt
+
+npm install pg (Install PostgreSQL)
 ```

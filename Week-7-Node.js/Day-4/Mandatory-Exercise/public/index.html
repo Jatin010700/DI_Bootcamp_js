@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div id="formList">
+
+            <form id="login-form">
+            <div>
+                <h1>LOGIN</h1>
+                <label for="username">Username:</label> <br>
+                <input type="text" id="logUsername" name="username" required> 
+            </div>
+            
+            <div>
+                <label for="password">Password:</label><br>
+                <input type="password" id="logPassword" name="password" required>
+            </div>
+            <br>
+            <div>
+                <button type="submit" id="loginBTN" class="submitBTN" disabled>Login</button>
+            </div>
+            </form>
+            <p id="loginResult"></p>
+ 
+            <!------------REGISTER----------->
+       
+            <form id="register-form">
+            <div> 
+                <h1>REGISTER</h1>
+                <label for="firstName">First Name:</label> <br>
+                <input type="text" id="firstName" name="firstName" required>
+            </div>
+
+            <div>
+                <label for="lastName">Last Name:</label> <br>
+                <input type="text" id="lastName" name="lastName" required>
+            </div>
+            
+            <div>
+                <label for="email">Email:</label> <br>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div>
+                <label for="username">Username:</label> <br>
+                <input type="text" id="username" name="username" required>
+            </div>
+
+            <div>
+                <label for="password">Password:</label> <br>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <br>
+            <div>
+                <button type="submit" id="registerBTN" class="submitBTN" disabled >Register</button>
+            </div>
+
+            </form>
+            <p id="registerResult"></p>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

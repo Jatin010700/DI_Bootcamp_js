@@ -1,0 +1,19 @@
+body{
+    font-family: 'Poppins', sans-serif;
+}
+#formList{
+    display: flex;
+    gap: 5em;
+    justify-content: center;
+}
+input{
+    width: 150%;
+    padding: 10px;
+}
+.submitBTN{
+    padding: 8px 20px;
+    background-color: aqua;
+    border: none;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
