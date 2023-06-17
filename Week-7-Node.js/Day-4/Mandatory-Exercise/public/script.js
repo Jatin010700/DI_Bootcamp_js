@@ -54,8 +54,7 @@ loginForm.addEventListener('input', function () {
   loginBtn.disabled = !isFormValid;
 });
 
-//-----------------------------------------------------//
-// script.js
+//----------------script.js----------------//
 document.addEventListener('DOMContentLoaded', () => {
   const registerForm = document.getElementById('register-form');
   const loginForm = document.getElementById('login-form');
@@ -73,10 +72,10 @@ async function registerUser(event) {
   const username = document.getElementById('username').value;
   const password = document.getElementById('password').value;
 
-  if (!firstName || !lastName || !email || !username || !password) {
-    alert('Please fill in all fields.');
-    return;
-  }
+  // if (!firstName || !lastName || !email || !username || !password) {
+  //   alert('Please fill in all fields.');
+  //   return;
+  // }
 
   const response = await fetch('/register', {
     method: 'POST',
@@ -88,23 +87,28 @@ async function registerUser(event) {
 
   const data = await response.json();
   if (response.ok) {
-    alert(data.message);
+    document.getElementById('registerResult').innerText = `${data.message}`;
+    setTimeout(() => {
+      location.reload(); // Reload the page after a timeout
+    }, 3000);
   } else {
-    alert(data.error);
+    document.getElementById('registerResult').innerText = `${data.error}`;
   }
 }
 
+
+//------------LOGIN------------//
 async function loginUser(event) {
   event.preventDefault();
 
   const username = document.getElementById('logUsername').value;
   const password = document.getElementById('logPassword').value;
 
-  if (!username || !password) {
-    alert('Please fill in all fields.');
-    return;
-  }
-
+  // if (!username || !password) {
+  //   alert('Please fill in all fields.');
+  //   return;
+  // }
+  
   const response = await fetch('/login', {
     method: 'POST',
     headers: {
@@ -115,8 +119,8 @@ async function loginUser(event) {
 
   const data = await response.json();
   if (response.ok) {
-    alert(data.message);
+    document.getElementById('loginResult').innerText = `${data.message}`;
   } else {
-    alert(data.error);
+    document.getElementById('loginResult').innerText = `${data.error}`;
   }
 }

@@ -3,7 +3,7 @@ body{
 }
 #formList{
     display: flex;
-    gap: 5em;
+    gap: 10em;
     justify-content: center;
 }
 input{
