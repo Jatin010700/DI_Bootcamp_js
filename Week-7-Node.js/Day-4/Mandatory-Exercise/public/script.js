@@ -55,59 +55,68 @@ loginForm.addEventListener('input', function () {
 });
 
 //-----------------------------------------------------//
-
-document.addEventListener('DOMContentLoaded', function() {
+// script.js
+document.addEventListener('DOMContentLoaded', () => {
   const registerForm = document.getElementById('register-form');
-  const registerSubmit = document.getElementById('register-submit');
   const loginForm = document.getElementById('login-form');
-  const loginSubmit = document.getElementById('login-submit');
 
-  // Add event listeners for form submissions (handle fetch to server)
-  registerForm.addEventListener('submit', function(event) {
-    event.preventDefault();
-    // Retrieve form data and send it to the server
-    const formData = new FormData(registerForm);
-    fetch('/register', {
-      method: 'POST',
-      body: formData
-    })
-    .then(response => response.json())
-    .then(data => {
-      if (data.success) {
-        alert('Registration successful!');
-        // Clear the form
-        registerForm.reset();
-      } else {
-        alert('Registration failed: ' + data.message);
-      }
-    })
-    .catch(error => {
-      console.error('Registration error:', error);
-      alert('An error occurred during registration.');
-    });
-  });
-
-  loginForm.addEventListener('submit', function(event) {
-    event.preventDefault();
-    // Retrieve form data and send it to the server
-    const formData = new FormData(loginForm);
-    fetch('/login', {
-      method: 'POST',
-      body: formData
-    })
-    .then(response => response.json())
-    .then(data => {
-      if (data.success) {
-        alert('Login successful!');
-        // Clear the form
-        loginForm.reset();
-      } else {
-        alert('Login failed: ' + data.message);
-      }
-    })
-    .catch(error => {
-      console.error('Login error:', error);
-      alert('An error occurred during login.');
-    });
-  });
+  registerForm.addEventListener('submit', registerUser);
+  loginForm.addEventListener('submit', loginUser);
 });
+
+async function registerUser(event) {
+  event.preventDefault();
+
+  const firstName = document.getElementById('firstName').value;
+  const lastName = document.getElementById('lastName').value;
+  const email = document.getElementById('email').value;
+  const username = document.getElementById('username').value;
+  const password = document.getElementById('password').value;
+
+  if (!firstName || !lastName || !email || !username || !password) {
+    alert('Please fill in all fields.');
+    return;
+  }
+
+  const response = await fetch('/register', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({ firstName, lastName, email, username, password })
+  });
+
+  const data = await response.json();
+  if (response.ok) {
+    alert(data.message);
+  } else {
+    alert(data.error);
+  }
+}
+
+async function loginUser(event) {
+  event.preventDefault();
+
+  const username = document.getElementById('logUsername').value;
+  const password = document.getElementById('logPassword').value;
+
+  if (!username || !password) {
+    alert('Please fill in all fields.');
+    return;
+  }
+
+  const response = await fetch('/login', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({ username, password })
+  });
+
+  const data = await response.json();
+  if (response.ok) {
+    alert(data.message);
+  } else {
+    alert(data.error);
+  }
+}

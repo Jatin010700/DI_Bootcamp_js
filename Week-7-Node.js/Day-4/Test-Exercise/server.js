@@ -26,7 +26,7 @@ app.post('/user',(req,res)=>{
   console.log(req.body);
   DB.createUser(req.body)
   .then(data => {
-    res.send({message:'OK'})
+    res.send(data)
   })
   .catch(err => {
     res.send({message:err.detail})
