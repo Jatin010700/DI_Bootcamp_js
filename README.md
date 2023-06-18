@@ -22,7 +22,7 @@ cd (filename)
 npm start
 ```
 
-### React Router:
+### React Router
 ```
 npm install react-router
 ```
@@ -36,7 +36,7 @@ import { BrowserRouter } from "react-router-dom";
 </BrowserRouter>
 ```
 
-### Redux:
+### Redux
 ```
 npm install --save redux react-redux
 ```
@@ -61,4 +61,42 @@ npm install knex
 npm install bcrypt
 
 npm install pg (Install PostgreSQL)
+```
+***
+
+## DATABASE
+
+```
+Create Database: CREATE DATABASE (database_name);
+
+Show Existing Databases: \l
+
+Switch to another database: \c (database_name)
+
+Show Tables: \d
+
+Show Tables in current database : \dt
+```
+***
+
+## GIT Commands
+#### Method 1
+```
+git init (Create an empty Git REPO or reinitialize an existing one)
+git remote add origin (REPO link)
+git remote -v
+git branch -M main
+git status
+git pull --allow-unrelated-histories origin main
+```
+#### Method 2
+```
+git clone (REPO link)
+```
+
+#### Making changes and syncing with GitHub (MAKE_NEW_FILE)
+```
+git add .
+git commit -m "add file FILENAME"
+git push -u origin main
 ```
