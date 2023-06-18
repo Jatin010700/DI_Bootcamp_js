@@ -92,6 +92,7 @@ git pull --allow-unrelated-histories origin main
 #### Method 2
 ```
 git clone (REPO link)
+clone REPO in VS Code (copy_paste REPO Link)
 ```
 
 #### Making changes and syncing with GitHub (MAKE_NEW_FILE)
