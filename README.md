@@ -24,7 +24,7 @@ npm start
 
 ### React Router
 ```
-npm install react-router
+npm i react-router-dom
 ```
 
 #### Add Into Index.js
@@ -82,10 +82,12 @@ Show Tables in current database : \dt
 ## GIT Commands
 #### Method 1
 ```
-git init (Create an empty Git REPO or reinitialize an existing one)
-git remote add origin (REPO link)
-git remote -v
+git init
+git add README.md
+git commit -m "first commit"
 git branch -M main
+git remote add origin https://github.com/Jatin010700/test.git
+git push -u origin main
 git status
 git pull --allow-unrelated-histories origin main
 ```
@@ -97,7 +99,7 @@ clone REPO in VS Code (copy_paste REPO Link)
 
 #### Making changes and syncing with GitHub (MAKE_NEW_FILE)
 ```
-git add .
-git commit -m "add file FILENAME"
+git remote add origin https://github.com/Jatin010700/test.git
+git branch -M main
 git push -u origin main
 ```
