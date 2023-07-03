@@ -103,7 +103,25 @@ git remote add origin https://github.com/Jatin010700/test.git
 git branch -M main
 git push -u origin main
 ```
+***
+## Deployment 
+```
+Create front-end REPO
+Create back-end REPO
 
+npm install ALL DEPENDENCY (npm i)
+
+Deploy both
+
+Create Database on RENDER
+
+link database external
+
+add process.env
+
+add back-end link when fetching
+```
+***
 ## Media Queries
 ```
 /* (320x480) iPhone (Original, 3G, 3GS) */
@@ -195,4 +213,4 @@ git push -u origin main
 @media  screen and (max-width: 1600px) {
     /* insert styles here */
 }
-``
+```
